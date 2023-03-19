@@ -1,0 +1,156 @@
+import java.util.*;
+import java.lang.*;
+class lesgo {
+    public static void main()
+    {   
+        Scanner ob=new Scanner(System.in);
+        System.out.println("Enter Password :");
+        String pass = ob.nextLine();
+        String key = "";
+        key = "abcdefghijklmnopqrstuvwxyz";
+        if (pass.length()%2==1)
+            { pass = pass+" ";
+            }
+            
+        
+        
+        int n = pass.length();
+        String a[]=new String[n];
+        String evenString = "", oddString = "";
+        String KEY = key;
+        String s1,s2; s1=""; s2=""; char z; char y;
+        y=0;
+        char evenarray[]; char oddarray[];
+        for (int i=0; i<pass.length(); i++)
+      {
+           z = pass.charAt(i);
+           s1 = z+s1;
+        }
+        
+        for (int j=0; j<key.length(); j++)
+      { 
+           y = key.charAt(j);
+           s2 = y+s2;
+        }
+        String s3="";
+        if(pass.length()%2==0)
+            
+        s3 = KEY+s1+s2;
+    
+    else 
+      s3 = KEY+s1+s2;
+    
+         String X = s3;
+        
+        
+        for (int i = 0; i < s3.length(); i++)
+        { char k = s3.charAt(i);
+            if (i % 2 == 0) 
+            {
+                evenString = evenString + k;
+                
+            }
+            else if (i%2==1)
+            {
+                oddString = oddString + k ;
+            }
+        }
+        String s4 = evenString+oddString; int s4len = s4.length();
+        
+    
+        evenarray = new char[evenString.length()];
+        oddarray = new char[oddString.length()];
+        char[] stringarray = new char[s4len];
+        
+        int strinlen = stringarray.length;
+        String s5 ="";
+        
+        
+        
+        for(int j=0;j<strinlen;j++)
+            {
+                char x=s4.charAt(j);
+            
+                
+                {
+                    int s=(int)x;
+                    s=s+3;
+                s5 = s5+(char)s;
+                    
+                    
+                    
+                    if ((x=='a'||x=='b'||x=='c'||x=='d'||x=='e'||x=='f'||x=='g'||x=='h'||x=='i'||
+                x=='j'||x=='k'||x=='l'||x=='m'||x=='n'||x=='o'||x=='p'||x=='q'||x=='r'||x=='s'
+                ||x=='t'||x=='u'||x=='v'||x=='w'||x=='x'||x=='y'||x=='z'||x=='A'||x=='B'||x=='C'||x=='D'||x=='E'||x=='F'||x=='G'||x=='H'||x=='I'||
+                x=='J'||x=='K'||x=='L'||x=='M'||x=='N'||x=='O'||x=='P'||x=='Q'||x=='R'||x=='S'
+                ||x=='T'||x=='U'||x=='V'||x=='W'||x=='X'||x=='Y'||x=='Z' && ((char)s > 'z' ||(char)s > 'Z')))
+                    {
+                            
+                            
+                }
+                else if(x=='0'||x=='1'||x=='2'||x=='3'||x=='4'||x=='5'||x=='6'||x=='7'||x=='8'||
+                x=='9' && x>9)
+                { 
+                }
+                
+                
+            }
+        }
+            
+            String s6="";
+            for(int j=0;j<strinlen;j++)
+            {
+                char x=s5.charAt(j);
+            
+                
+                {
+                    int s=(int)x;
+                    s=s-3;
+                s6 = s6+(char)s;
+            }
+        }
+        
+    
+    int length = (s6.length())/2;
+    String str1 = s6.substring(0,length);
+    String str2 = s6.substring(length);
+    
+    
+    String result = "";
+    for (int i = 0; i < str1.length() | i < str2.length(); i++) {
+            if (i < str1.length())
+                result +=str1.charAt(i);
+            if (i < str2.length())
+                result += str2.charAt(i);
+        }
+        
+    
+
+String s7 =""; s7 = result;
+int keylength = key.length();
+
+String str3= s7.substring(keylength);
+String str4 = str3.substring(keylength);
+String s8=""; int str4length = str4.length();
+char r;
+
+
+
+for (int i=0; i<str3.length(); i++)
+      {
+            r = str3.charAt(i);
+           s8 = r+s8;
+        }
+        
+        String s9= s8.substring(keylength);
+        String s10 ="";
+        
+        
+         System.out.println(s5);
+         System.out.println(s9);
+        
+        
+        
+        
+}
+}
