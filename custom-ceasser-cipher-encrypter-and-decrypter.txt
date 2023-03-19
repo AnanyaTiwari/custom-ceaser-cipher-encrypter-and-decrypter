@@ -147,7 +147,7 @@ for (int i=0; i<str3.length(); i++)
         
         
          System.out.println("Encrypted password:"+s5);
-         System.out.println("Decrypted code:"+s9);
+         System.out.println("Decrypted password:"+s9);
         
         
         
